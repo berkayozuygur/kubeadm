@@ -16,16 +16,3 @@ This is a simple playbook to wrap the following operations:
 This has been tested with **CentOS 7.3** and **Kubernetes v1.6.1**
 
 At the end of the playbook, either copy `/etc/kubernetes/admin.conf` to `$HOME/config` or `export KUBECONFIG=/etc/kubernetes/admin.conf` and `kubectl` will operate on the new cluster.
-
-# How To
-
-```
-git clone https://github.com/sjenning/kubeadm-playbook.git
-cd kubeadm-playbook/
-cp hosts.example hosts
-vi hosts <add hosts>
-group_vars
-cp group_vars/all.example group_vars/all
-vi group_vars/all <modify vars if needed>
-ansible-playbook -i hosts site.yaml
-```
