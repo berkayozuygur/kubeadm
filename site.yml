@@ -1,0 +1,4 @@
+---
+- include: common.yml
+#- include: master.yml
+- include: node.yml

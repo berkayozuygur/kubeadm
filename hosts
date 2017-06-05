@@ -1,0 +1,8 @@
+# Only one master is allowed
+[master]
+#12.0.5.73 ansible_connection=ssh ansible_ssh_user=centos ansible_ssh_private_key_file=/home/berkay/ty-aws-key.pem
+
+[node]
+#12.0.5.196 ansible_connection=ssh ansible_ssh_user=centos ansible_ssh_private_key_file=/home/berkay/ty-aws-key.pem
+#12.0.5.102 ansible_connection=ssh ansible_ssh_user=centos ansible_ssh_private_key_file=/home/berkay/ty-aws-key.pem
+10.1.20.84 ansible_connection=ssh ansible_ssh_user=root
